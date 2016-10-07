@@ -1,4 +1,4 @@
-# Server Response
+# Server Response [![Build Status](https://travis-ci.org/flywheelsports/fwsp-server-response.svg?branch=master)](https://travis-ci.org/flywheelsports/fwsp-server-response)
 A server response module for use with Node / ExpressJS.
 
 The goal of this module is to standardize responses from JSON enabled servers. Each response sent contains the `statusCode`, `statusMessage`, `statusDescription` and `result`.
