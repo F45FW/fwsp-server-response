@@ -21,7 +21,7 @@ Other client, servers, and services which receive the formatted response can alw
 ## Installation
 
 ```shell
-$ npm install @flywheelsports/server-response
+$ npm -i install fwsp-server-response
 ```
 
 ## Usage

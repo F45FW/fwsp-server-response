@@ -1,6 +1,6 @@
 {
   "name": "fwsp-server-response",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Server Response module for use with Node / ExpressJS",
   "author": {
     "name": "Carlos Justiniano"
