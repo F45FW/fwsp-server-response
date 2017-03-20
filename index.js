@@ -221,13 +221,13 @@ class ServerResponse {
 
   /**
    * @name sendInternalError
-   * @summary Alias for sendResponseServerError
+   * @summary Alias for sendServerError
    * @param {object} res - Node HTTP response object
    * @param {object} data - An object to send
    * @return {object} res - Returns the (res) response object when in test mode, else undefined
    */
   sendInternalError(res, data) {
-    return this.sendResponseServerError(res, data);
+    return this.sendServerError(res, data);
   }
 
   /**
