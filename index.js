@@ -275,6 +275,7 @@ ServerResponse.HTTP_UNAUTHORIZED = 401;
 ServerResponse.HTTP_PAYMENT_REQUIRED = 402;
 ServerResponse.HTTP_NOT_FOUND = 404;
 ServerResponse.HTTP_METHOD_NOT_ALLOWED = 405;
+ServerResponse.NOT_ACCEPTABLE = 406;
 ServerResponse.HTTP_CONFLICT = 409;
 ServerResponse.HTTP_TOO_LARGE = 413;
 ServerResponse.HTTP_TOO_MANY_REQUEST = 429;
@@ -294,6 +295,7 @@ ServerResponse.STATUS = {
   '402': ['Payment Required', 'This code is reserved for future use.'],
   '404': ['Not Found', 'The requested resource was not found on the server'],
   '405': ['Method not allowed', 'The HTTP method used is not allowed'],
+  '406': ['Not Acceptable', 'The target resource does not have a current representation that would be acceptable to the user agent'],
   '409': ['Conflict','Request has caused a conflict'],
   '413': ['Request Entity Too Large', 'The webserver or proxy believes the request is too large'],
   '429': ['Too Many Requests', 'Too many requests issue within a period'],
