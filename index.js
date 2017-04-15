@@ -197,6 +197,17 @@ class ServerResponse {
     return this.sendResponse(ServerResponse.HTTP_TOO_LARGE, res, data);
   }
 
+    /**
+   * @name sendUnprocessableEntity
+   * @summary Send an HTTP_UNPROCESSABLE_ENTITY server response to caller.
+   * @param {object} res - Node HTTP response object
+   * @param {object} data - An object to send
+   * @return {object} res - Returns the (res) response object when in test mode, else undefined
+   */
+  sendUnprocessableEntity(res, data) {
+    return this.sendResponse(ServerResponse.HTTP_UNPROCESSABLE_ENTITY, res, data);
+  }
+  
   /**
    * @name sendTooManyRequests
    * @summary Send an HTTP_TOO_MANY_REQUEST server response to caller.
@@ -278,6 +289,7 @@ ServerResponse.HTTP_METHOD_NOT_ALLOWED = 405;
 ServerResponse.NOT_ACCEPTABLE = 406;
 ServerResponse.HTTP_CONFLICT = 409;
 ServerResponse.HTTP_TOO_LARGE = 413;
+ServerResponse.HTTP_UNPROCESSABLE_ENTITY = 422;
 ServerResponse.HTTP_TOO_MANY_REQUEST = 429;
 ServerResponse.HTTP_SERVER_ERROR = 500;
 ServerResponse.HTTP_METHOD_NOT_IMPLEMENTED = 501;
@@ -298,6 +310,7 @@ ServerResponse.STATUS = {
   '406': ['Not Acceptable', 'The target resource does not have a current representation that would be acceptable to the user agent'],
   '409': ['Conflict','Request has caused a conflict'],
   '413': ['Request Entity Too Large', 'The webserver or proxy believes the request is too large'],
+  '422': ['Unprocessable Entity', 'The request was well-formed but was unable to be followed due to semantic errors'],
   '429': ['Too Many Requests', 'Too many requests issue within a period'],
   '500': ['Server Error', 'An error occurred on the server'],
   '501': ['Method Not Implemented', 'The requested method / resource isn\'t implemented on the server'],
